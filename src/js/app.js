@@ -69,11 +69,13 @@ App = {
             var id = candidate[0];
             var name = candidate[1];
             var voteCount = candidate[2];
-            if (candidate[0] == admin1) or (candidate[0] == admin2) 
+            if (candidate[0] == admin1 || candidate[0] == admin2){
               $("#f1").hide();
               $("#f2").show();
-            
-
+            }
+              
+            else{
+              $("#f2").hide();}
             // Render candidate Result
             var candidateTemplate =
               "<tr><th>" +
